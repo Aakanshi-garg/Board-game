@@ -694,7 +694,7 @@ scrape_configs:
       - targets: ['jenkins-ip:8080']
 ```
  Replace <jenkins-ip> with your actual Jenkins instance IP.
--Restart prometheus
+- Restart prometheus
 ``` bash
 pgrep prometheus
 kill <id>
