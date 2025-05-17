@@ -29,13 +29,14 @@ Here are the Phases involved :
 ### Step 4: Configure Security Group:
 - In the "Step 6: Configure Security Group" section, configure the security group to allow SSH access (port 22) from your IP address.
 - You may also want to allow other ports based on your requirements (e.g., HTTP, HTTPS) as in this pic Alt text
-
+![Screenshot (637)](https://github.com/user-attachments/assets/d36b9fd5-e302-4aa8-a7fe-9ca57f189e8f)
 - Click "Review and Launch".
 
 ### Step 5: Review, Launch, and Access the Instance
 - Review all the instance configuration settings and click "Launch".
 - In the key pair dialog, choose an existing key pair or create a new one. Check the acknowledgment box and confirm the launch.
 - Once the instance is running, use Mobaxterm to connect via SSH using your key pair and the public IP address of the instance.
+![Screenshot (636)](https://github.com/user-attachments/assets/c1941f32-90e1-4a3d-9fa1-bb62f8a64259)
 
 ### Step 6: Setup k8-cluster using Kubeadm
 ### Execute on Both "Master" & "Worker" Nodes
