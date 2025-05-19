@@ -6,7 +6,8 @@ This project showcases the implementation of a complete CI/CD (Continuous Integr
 By integrating various DevOps tools and practices, this project ensures faster, more reliable deployments, improved code quality, and continuous visibility into application health. It serves as a practical example of how automation can streamline software development and operations in a modern development workflow.
 Here are the Phases involved & architecture of the pipeline:
 
-![architecture](https://github.com/user-attachments/assets/0ff25046-98dc-4a46-a5f9-ea854c02deac)
+![Capture](https://github.com/user-attachments/assets/f68ef9a0-804a-447a-b3fc-2bfe0df5d7f0)
+
 ## Phase1_Create Vms
 ### Step 1: Sign in and Navigate to EC2
 - Go to https://aws.amazon.com/console/ and sign in with your AWS account.
