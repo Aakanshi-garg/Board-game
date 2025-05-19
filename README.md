@@ -608,7 +608,7 @@ wget https://dl.grafana.com/enterprise/release/grafana-enterprise_12.0.0_amd64.d
 sudo dpkg -i grafana-enterprise_12.0.0_amd64.deb
 ```
 - Access the Grafana web UI at
-  ``` bash
+``` bash
 http://<public-ip>:3000
 ```
 ### 3. Install Blackbox_exporter which help to monitor website 
