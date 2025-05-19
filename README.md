@@ -7,7 +7,6 @@ By integrating various DevOps tools and practices, this project ensures faster, 
 Here are the Phases involved & architecture of the pipeline:
 
 ![architecture](https://github.com/user-attachments/assets/0ff25046-98dc-4a46-a5f9-ea854c02deac)
-
 ## Phase1_Create Vms
 ### Step 1: Sign in and Navigate to EC2
 - Go to https://aws.amazon.com/console/ and sign in with your AWS account.
