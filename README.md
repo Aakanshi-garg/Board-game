@@ -4,8 +4,9 @@
 This project showcases the implementation of a complete CI/CD (Continuous Integration and Continuous Deployment) pipeline for a Java-based board game application. The goal is to automate the entire software delivery process — from building and testing the code to security scanning, packaging, deployment on Kubernetes, and real-time monitoring.
 
 By integrating various DevOps tools and practices, this project ensures faster, more reliable deployments, improved code quality, and continuous visibility into application health. It serves as a practical example of how automation can streamline software development and operations in a modern development workflow.
-Here are the Phases involved :
+Here are the Phases involved & architecture of the pipeline:
 
+![architecture](https://github.com/user-attachments/assets/0ff25046-98dc-4a46-a5f9-ea854c02deac)
 
 ## Phase1_Create Vms
 ### Step 1: Sign in and Navigate to EC2
