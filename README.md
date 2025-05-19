@@ -36,6 +36,7 @@ Here are the Phases involved :
 - Review all the instance configuration settings and click "Launch".
 - In the key pair dialog, choose an existing key pair or create a new one. Check the acknowledgment box and confirm the launch.
 - Once the instance is running, use Mobaxterm to connect via SSH using your key pair and the public IP address of the instance.
+
 ![Screenshot (636)](https://github.com/user-attachments/assets/c1941f32-90e1-4a3d-9fa1-bb62f8a64259)
 
 ### Step 6: Setup k8-cluster using Kubeadm
@@ -262,7 +263,7 @@ docker ps
 ```
 This command lists all running containers along with their IDs, among other information.
 - Access Container's Bash Shell: Once you have the container ID, you can execute the docker exec command to access the container's bash shell:
-`` bash
+``` bash
 docker exec -it <container_ID> /bin/bash
 ```
 Replace <container_ID> with the actual ID of the Nexus container.
@@ -326,7 +327,7 @@ docker run -d --name sonar -p 9000:9000 sonarqube:latest
 ```
 This command will download the sonarqube:latest Docker image from Docker Hub if it's not already available locally. Then, it will create a container named "sonar" from this image, running it in detached mode (-d flag) and mapping port 9000 on the host machine to port 9000 in the container (-p 9000:9000 flag).
 
-3. Access SonarQube by opening a web browser and navigating to http://VmIP:9000.
+3. Access SonarQube by opening a web browser and navigating to http://<public-ip>:9000.
 
 This will start the SonarQube server, and you should be able to access it using the provided URL. If you're running Docker on a remote server or a different port, replace localhost with the appropriate hostname or IP address and adjust the port accordingly.
 
@@ -595,7 +596,9 @@ cd prometheus-3.4.0.linux-amd64
 ./prometheus &
 ```
 - Access the Prometheus web UI at
+``` bash
 http://<public-ip>:3000
+```
 
 ### 2. Install Grafana
 -  Run the following command 
@@ -605,8 +608,9 @@ wget https://dl.grafana.com/enterprise/release/grafana-enterprise_12.0.0_amd64.d
 sudo dpkg -i grafana-enterprise_12.0.0_amd64.deb
 ```
 - Access the Grafana web UI at
+  ``` bash
 http://<public-ip>:3000
-
+```
 ### 3. Install Blackbox_exporter which help to monitor website 
 - Download package
 ``` bash
@@ -629,8 +633,9 @@ cd blackbox_exporter-0.26.0.linux-amd64
 ./blackbox_exporter &
 ```
 - Access the Prometheus web using
+``` bash
 http://<public-ip>:9115
-
+```
 ### 4. Configure Prometheus
 - Navigate to your Prometheus folder:
 ``` bash
