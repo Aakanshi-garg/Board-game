@@ -712,3 +712,6 @@ Add a new dashboard ->
 Choose Prometheus as the data source -> Import or create panels for system-level metrics (e.g., CPU, memory, disk, etc.) using Node Exporter data.
 
 ✅ Now you can visualize and monitor system metrics of your Jenkins instance using Grafana dashboards.
+![Screenshot (629)](https://github.com/user-attachments/assets/d1373de5-754d-4e17-aa04-072aba229008)
+
+![Screenshot (630)](https://github.com/user-attachments/assets/93a1ef59-ffc6-4dc3-81c6-c72418d33032)
